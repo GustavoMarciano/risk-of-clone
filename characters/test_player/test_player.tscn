@@ -1,0 +1,77 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://characters/test_player/test_player.gd" type="Script" id=1]
+[ext_resource path="res://characters/test_player/assets/player.png" type="Texture" id=2]
+[ext_resource path="res://characters/default_character/Status.tscn" type="PackedScene" id=3]
+[ext_resource path="res://characters/default_character/AnimationPlayer.tscn" type="PackedScene" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 4, 8 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 2, 10 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" index="0"]
+
+position = Vector2( -0.196555, -2.47232 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "collision" ]
+
+[node name="Sprite" type="AnimatedSprite" parent="." index="0"]
+
+frames = SubResource( 1 )
+animation = "idle"
+offset = Vector2( 0.851034, -1.31469 )
+flip_h = true
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( 0.00752841, -2.05483 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Area2D" type="Area2D" parent="." index="2"]
+
+position = Vector2( 0.444683, -0.56022 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 2
+collision_mask = 2
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Collision" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
+
+modulate = Color( 0.135963, 0.980469, 0.0153198, 1 )
+position = Vector2( -0.232638, -1.47032 )
+scale = Vector2( 1, 0.799455 )
+shape = SubResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Status" parent="." index="3" instance=ExtResource( 3 )]
+
+[node name="AnimationPlayer" parent="." index="4" instance=ExtResource( 4 )]
+
+
