@@ -16,7 +16,6 @@ config/icon="res://icon.png"
 
 [display]
 
-window/vsync/use_vsync=false
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
 window/stretch/shrink="1"
@@ -44,5 +43,4 @@ ui_jump=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"
 
 [rendering]
 
-quality/2d/use_pixel_snap=true
 environment/default_environment="res://default_env.tres"

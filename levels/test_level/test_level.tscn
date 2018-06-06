@@ -26,7 +26,6 @@ Handler = NodePath("../EnemiesHandler")
 
 [node name="Player" parent="YSort/PlayerHandler" index="0" instance=ExtResource( 2 )]
 
-position = Vector2( 0, 0 )
 _sections_unfolded = [ "Collision", "Transform", "collision" ]
 
 [node name="Camera2D" type="Camera2D" parent="YSort/PlayerHandler/Player" index="5"]
