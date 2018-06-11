@@ -17,14 +17,14 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-extents = Vector2( 4, 8.09167 )
+extents = Vector2( 4, 8 )
 
 [sub_resource type="RectangleShape2D" id=3]
 
 custom_solver_bias = 0.0
-extents = Vector2( 2, 10.0043 )
+extents = Vector2( 2, 8.01237 )
 
-[node name="KinematicBody2D" type="KinematicBody2D" index="0"]
+[node name="KinematicBody2D" type="KinematicBody2D"]
 
 input_pickable = false
 collision_layer = 1
@@ -61,7 +61,6 @@ _sections_unfolded = [ "Collision", "Transform" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
 
 modulate = Color( 0.135963, 0.980469, 0.0153198, 1 )
-scale = Vector2( 1, 0.799455 )
 shape = SubResource( 3 )
 _sections_unfolded = [ "Transform", "Visibility" ]
 
@@ -71,16 +70,11 @@ _sections_unfolded = [ "Transform", "Visibility" ]
 
 [node name="RayCast2D" type="RayCast2D" parent="." index="5"]
 
+position = Vector2( 0.128689, -0.193033 )
 enabled = false
 exclude_parent = false
-cast_to = Vector2( 90, 0 )
+cast_to = Vector2( 800, 0 )
 collision_mask = 1
-
-[node name="RayCast2D2" type="RayCast2D" parent="." index="6"]
-
-enabled = false
-exclude_parent = false
-cast_to = Vector2( -90, 0 )
-collision_mask = 1
+_sections_unfolded = [ "Transform" ]
 
 
