@@ -1,7 +1,7 @@
 extends Node
 
 ######### CALC FUNCTION ######
-func calc(type,value,variable,MAX,MIN):
+func calc(type,value,variable,MAX,MIN): 
 	match type:
 		"=":
 			if !(value >= MAX):

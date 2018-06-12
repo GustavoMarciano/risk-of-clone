@@ -3,6 +3,7 @@ extends "res://characters/default_character/Movement.gd"
 var target = null
 
 func _ready():
+	#initializing object variables and state
 	$"Status".set_state("IDLE")
 	$"Status".set_speed("=",20)
 	$"Status".set_total_hp("=",200)

@@ -16,7 +16,7 @@ position = Vector2( 1, -1 )
 sort_enabled = true
 _sections_unfolded = [ "Sort" ]
 
-[node name="Position2D" parent="YSort" index="0" instance=ExtResource( 1 )]
+[node name="EnemiesSpawner" parent="YSort" index="0" instance=ExtResource( 1 )]
 
 position = Vector2( -1, 1 )
 maxWaitTime = 3.0
@@ -30,6 +30,7 @@ _sections_unfolded = [ "Collision", "Transform", "collision" ]
 
 [node name="Camera2D" type="Camera2D" parent="YSort/PlayerHandler/Player" index="5"]
 
+visible = false
 anchor_mode = 1
 rotating = false
 current = true
@@ -56,7 +57,7 @@ _sections_unfolded = [ "Drag Margin", "Transform" ]
 
 [node name="EnemiesHandler" type="Node" parent="YSort" index="2"]
 
-[node name="TileMap" type="TileMap" parent="YSort" index="3"]
+[node name="Floor" type="TileMap" parent="YSort" index="3"]
 
 mode = 0
 tile_set = ExtResource( 3 )
@@ -77,7 +78,7 @@ format = 1
 tile_data = PoolIntArray( 131058, 0, 0, 131059, 0, 0, 131060, 0, 0, 131061, 0, 0, 131062, 0, 0, 131063, 0, 0, 131064, 0, 0, 131065, 0, 0, 131066, 0, 0, 131067, 0, 0, 131068, 0, 0, 131069, 0, 0, 131070, 0, 0, 131071, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 0, 0, 65544, 0, 0, 65545, 0, 0, 65546, 0, 0, 65547, 0, 0 )
 _sections_unfolded = [ "Cell", "Collision", "Transform" ]
 
-[node name="TileMap2" type="TileMap" parent="YSort" index="4"]
+[node name="Wall" type="TileMap" parent="YSort" index="4"]
 
 modulate = Color( 0, 1, 0.71875, 1 )
 mode = 0

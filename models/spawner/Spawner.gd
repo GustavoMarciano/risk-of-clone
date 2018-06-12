@@ -19,7 +19,7 @@ func _on_Timer_timeout():
 
 	if enemy_count > 0:
 		var new_enemy = enemy.instance()
-		var cells = $"../TileMap".get_used_cells()
+		var cells = $"../Floor".get_used_cells()
 		var sort = rand_range(0,cells.size())
 		var new_position =  cells[sort] * 16
 		
