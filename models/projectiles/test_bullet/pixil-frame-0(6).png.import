@@ -7,10 +7,7 @@ path="res://.import/pixil-frame-0(6).png-256c5417727687ed81e0a959f7f430ce.stex"
 [deps]
 
 source_file="res://models/projectiles/test_bullet/pixil-frame-0(6).png"
-source_md5="18b55be4b9c758ff2206f5bccf960da9"
-
 dest_files=[ "res://.import/pixil-frame-0(6).png-256c5417727687ed81e0a959f7f430ce.stex" ]
-dest_md5="c87eb1c14ce58d9abb5f9f79916cd778"
 
 [params]
 

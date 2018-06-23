@@ -7,10 +7,7 @@ path="res://.import/pixil-frame-0-1.png-5b8dbfca06be9a717ca0200e27e8e9da.stex"
 [deps]
 
 source_file="res://characters/test_player/assets/pixil-frame-0-1.png"
-source_md5="ec461dba435486454ae0c3399ee88a0d"
-
 dest_files=[ "res://.import/pixil-frame-0-1.png-5b8dbfca06be9a717ca0200e27e8e9da.stex" ]
-dest_md5="eb965199c5570b86451b9a5c88fdd0eb"
 
 [params]
 
