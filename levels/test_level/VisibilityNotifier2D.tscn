@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://levels/test_level/VisibilityNotifier2D.gd" type="Script" id=1]
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D"]
+
+position = Vector2( -137, 17 )
+rect = Rect2( 0, -1, 320, 16 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+SpawnerPath = NodePath("../../Spawner")
+
+[connection signal="screen_entered" from="." to="." method="_on_VisibilityNotifier2D_screen_entered"]
+
+[connection signal="screen_exited" from="." to="." method="_on_VisibilityNotifier2D_screen_exited"]
+
+

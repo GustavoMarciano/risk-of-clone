@@ -1,9 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://characters/test_enemy/test_enemy.gd" type="Script" id=1]
+[ext_resource path="res://characters/test_enemy/TestEnemy.gd" type="Script" id=1]
 [ext_resource path="res://characters/test_enemy/enemy.png" type="Texture" id=2]
 [ext_resource path="res://characters/default_character/Status.tscn" type="PackedScene" id=3]
-[ext_resource path="res://characters/default_character/AnimationPlayer.tscn" type="PackedScene" id=4]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -21,7 +21,7 @@ custom_solver_bias = 0.0
 radius = 43.6578
 height = 522.973
 
-[node name="KinematicBody2D" type="KinematicBody2D"]
+[node name="KinematicBody2D" type="KinematicBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 2
@@ -66,9 +66,7 @@ _sections_unfolded = [ "Transform", "Visibility" ]
 
 side = 1
 
-[node name="AnimationPlayer" parent="." index="4" instance=ExtResource( 4 )]
-
-[node name="Vision" type="Area2D" parent="." index="5"]
+[node name="Vision" type="Area2D" parent="." index="4"]
 
 visible = false
 input_pickable = true

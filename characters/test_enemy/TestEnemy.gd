@@ -26,7 +26,7 @@ func _physics_process(delta):
 					else:
 						motion.x = 0 
 				else:
-					 $"Status".set_state("CHASING")
+					 $"Status".set_state("IDLE")
 		"DEATH":
 			queue_free()
 	pass
