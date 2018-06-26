@@ -13,9 +13,6 @@ func exit():
 	owner._change_state("Idle")
 	return
 
-func handle_input(event):
-	return
-
 func update(delta):
 	owner.motion.x = owner.dir * speed #finali passing the multiplication of that number plus the velocity for motion.x. EX: (motion.x = 1 * 100),(motion.x = 0 * 100) remember 0 * X is always 0 
 	if owner.dir == 0:

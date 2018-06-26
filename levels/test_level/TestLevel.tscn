@@ -26,8 +26,6 @@ handler = NodePath("../EnemiesHandler")
 
 [node name="PlayerHandler" type="Node" parent="YSort" index="1"]
 
-editor/display_folded = true
-
 [node name="Player" parent="YSort/PlayerHandler" index="0" instance=ExtResource( 2 )]
 
 editor/display_folded = true

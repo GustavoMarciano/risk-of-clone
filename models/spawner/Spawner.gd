@@ -21,10 +21,10 @@ func _on_Timer_timeout():
 		var sort = rand_range(0,visible_spawns.size())
 		var new_enemy = enemy.instance()
 		var n_position = visible_spawns[sort]
-		var enemy_shape = new_enemy.get_node("CollisionShape2D").shape.get_extents().y
+		var enemy_shape = new_enemy.get_node("CollisionShape2D").get_shape().get_height() 
 
 		enemies_handler.get_parent().add_child(new_enemy)
-		new_enemy.set_position(Vector2(n_position.global_position.x + rand_range(0,n_position.get_rect().size.x * n_position.get_scale().x),n_position.global_position.y - enemy_shape+1))
+		new_enemy.set_position(Vector2(n_position.global_position.x + rand_range(0,n_position.get_rect().size.x * n_position.get_scale().x),n_position.global_position.y - enemy_shape))
 	enemy_count += 1
 	$"Timer".set_wait_time(rand_range(min_waitTime,max_waitTime))
 	$"Timer".start()

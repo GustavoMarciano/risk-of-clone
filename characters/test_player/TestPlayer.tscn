@@ -17,10 +17,11 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="CapsuleShape2D" id=2]
 
 custom_solver_bias = 0.0
-extents = Vector2( 4, 8 )
+radius = 4.00692
+height = 8.0
 
 [sub_resource type="RectangleShape2D" id=3]
 
