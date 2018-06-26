@@ -5,7 +5,7 @@ export (float) var max_waitTime
 export (NodePath) var handler 
 
 onready var enemy = load("res://characters/test_enemy/TestEnemy.tscn")
-onready var player = $"../PlayerHandler".get_child(0) 
+onready var player = $"../PlayerHandler".get_child(0)
 onready var enemies_handler = get_node(handler)
 onready var init_spawns = $"../TileMap".get_children()
 var visible_spawns = []

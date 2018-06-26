@@ -5,9 +5,9 @@
 [node name="Position2D" type="Position2D" index="0"]
 
 script = ExtResource( 1 )
-minWaitTime = 0.0
-maxWaitTime = null
-Handler = null
+min_waitTime = null
+max_waitTime = null
+handler = null
 
 [node name="Timer" type="Timer" parent="." index="0"]
 
